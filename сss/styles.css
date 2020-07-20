@@ -244,3 +244,7 @@ line-height: 1.555; /* 28/18 */
 color: #FFFFFF; 
 background-color: steelblue;
 }
+
+.navigation .link.current {
+  color: var(--accent-color);
+}
