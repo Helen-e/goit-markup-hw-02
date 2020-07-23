@@ -2,12 +2,14 @@
  --main-text-color:#757575;
 --title-text-color: #212121;
 --accent-color: #2196F3;
---white-text-clolor: #ffffff;
+--white-text-color: #ffffff;
 --black-text-color:  #000000;
 }
 
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
+
+/* <!-- Шапка сайта --> */
 
 body {
 font-family: Roboto, sans-serif;
@@ -22,7 +24,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.143;
 letter-spacing: 0.02em;
-color: #212121;
+color: var(--title-text-color);
 text-decoration: none;
 }
 
@@ -47,6 +49,8 @@ line-height: 1.143; /* 16/14 */
 letter-spacing: 0.02em;
 }
 
+/* <!-- Герой --> */
+
 h1 {
 font-weight: 900;
 font-size: 44px;
@@ -54,7 +58,7 @@ line-height: 1.365;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color:#ffffff;
+color: var(--white-text-color);
 background-color: lightslategray;   
 }
 
@@ -62,21 +66,17 @@ background-color: lightslategray;
 font-family: Raleway;
 font-weight: bold;
 font-size: 26px;
-line-height: 31px;
-color: #000000;
-font-family: Raleway;
-font-weight: bold;
-font-size: 26px;
-line-height: 31px;
+line-height: 1.192; /*31/26 */
+color: var(--black-text-color);
 text-decoration: none;
 }
 
 .logo-blue {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .logo-white {
- color: #FFFFFF; 
+ color: var(--white-text-color); 
 }
 
 .list {
@@ -89,12 +89,12 @@ list-style: none;
 
 .address-item:hover, 
 .address-item:focus {
-color: #2196F3;
+color: var(--accent-color);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: #2196F3;
+  color: var(--accent-color);
  }
 
 .actions-btn {
@@ -105,12 +105,14 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-color: #FFFFFF;
-background: #2196F3;
+color: var(--white-text-color);
+background: var(--accent-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px; 
 border-color: transparent;
 }
+
+/* <!-- Преимущества --> */
 
 .section-title {
 font-weight: bold;
@@ -126,7 +128,7 @@ font-size: 14px;
 line-height: 1.143; /* 16/14 */
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;
+color: var(--title-text-color);
 }
 
 .products-title {
@@ -136,13 +138,15 @@ line-height: 1.143; /* 16/14 */
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-align: center;
-color: #FFFFFF;
+color: var(--white-text-color);
 background-color: rgba(47, 48, 58, 0.8);
 }
 
+/* <!-- Портфель продуктов --> */
+
 .products-title:hover,
 .products-title:focus {
- color: #2196F3; 
+ color: var(--accent-color); 
 }
 
 .team-member-name {
@@ -150,15 +154,16 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.312; /* 19/16 */
 text-align: center;
-color: #212121;
+color: var(--title-text-color);
 }
 
 .job-title {
 font-size: 16px;
 line-height: 1.312; /* 19/16 */
-text-align: center;
-color: #757575; 
+text-align: center; 
 }
+
+/* Футер */
 
 .footer {
   background-color: #2F303A;
@@ -168,7 +173,7 @@ color: #757575;
 font-size: 14px;
 line-height: 1.714; /* 24/14 */
 font-style: normal;
-color: #FFFFFF;  
+color: var(--white-text-color);  
 }
 
 .contacts-link {
@@ -184,12 +189,12 @@ font-weight: bold;
 font-size: 14px;
 line-height: 1.143; /* 16/14 */
 text-transform: uppercase;
-color: #FFFFFF; 
+color: var(--white-text-color); 
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #2196F3; 
+  color: var(--accent-color); 
 }
 
 .filter-button {
@@ -197,7 +202,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.625; /* 26/16 */
 text-align: center;
-color: #212121;
+color: var(--title-text-color);
 border-color: transparent; 
 }
 
@@ -206,7 +211,7 @@ border-color: transparent;
 background: #2196F3;
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 border-radius: 4px;
-color: #FFFFFF;
+color: var(--white-text-color);
 }
 
 .product-item {
@@ -214,7 +219,7 @@ font-weight: bold;
 font-size: 18px;
 line-height: 2; /* 36/18 */
 letter-spacing: 0.06em;
-color: #212121;
+color: var(--title-text-color);
 text-decoration: none;
 }
 
@@ -225,7 +230,7 @@ text-decoration: none
 p.product-category {
 font-size: 16px;
 line-height: 1.875; /* 30/16 */
-color: #757575;
+/* color: #757575; */
 }
 
 .product-description:focus,
@@ -236,7 +241,7 @@ color: var(--accent-color);
 .product-description {
 font-size: 18px;
 line-height: 1.555; /* 28/18 */
-color: #FFFFFF; 
+color: var(--white-text-color); 
 background-color: steelblue;
 }
 
